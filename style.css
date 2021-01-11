@@ -23,8 +23,10 @@ h2:after{
     margin: 1.5% auto;
 }
 header{
-    position: sticky;
+    position: fixed;
     height: 60px;
+    width: 100vw;
+    z-index: 99;
     background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145), rgb(1, 1, 73));
 }
 /*---------------------------------------------*/
