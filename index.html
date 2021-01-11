@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section class="abc">
+        <div class="backsvg">
+            <svg class='svg1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path d="M0,96L26.7,112C53.3,128,107,160,160,149.3C213.3,139,267,85,320,74.7C373.3,64,427,96,480,117.3C533.3,139,587,149,640,138.7C693.3,128,747,96,800,90.7C853.3,85,907,107,960,149.3C1013.3,192,1067,256,1120,261.3C1173.3,267,1227,213,1280,202.7C1333.3,192,1387,224,1413,240L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="design">
+        <div class="des-1-4 des-1"></div>
+        <div class="des-1-4 des-2"></div>
+        <div class="des-1-4 des-3"></div>
+        <div class="des-1-4 des-4"></div>
+        <div class="container">
+            <div class="card">
+                <h2>HTML</h2>
+                <div class="card-img">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png" alt="">
+                </div>
+                <p>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.</p>
+                <h3>HTML</h3>
+            </div>
+            <div class="card">
+                <h2>CSS</h2>
+                <div class="card-img">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="">
+                </div>
+                <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+                <h3>CSS</h3>
+            </div>
+            <div class="card">
+                <h2>JavaScript</h2>
+                <div class="card-img">
+                    <img src="https://www.quintagroup.com/cms/js/js-image/javascript-logo.png/@@images/8c64c4b9-4e1c-4c26-9b5e-78d85e3130a9.png" alt="">
+                </div>
+                <p>Javascript is an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
+                <h3>JS</h3>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="contact-form">
+        <div class="cir-1"></div>
+        <div class="cir-2"></div>
+        <div class="form">
+            <form id="my-form" action="https://formspree.io/f/myybkdgn" method="POST">
+                <h2>Contact Form</h2>
+                <div class="name n-e-m">
+                    <label for="name">Name:</label>
+                    <input type="text" name="Name" id="name" required>
+                </div>
+                <div class="email n-e-m">
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" required>
+                </div>
+                <div class="message n-e-m">
+                    <label for="message">Message:</label>
+                    <textarea rows="3" name="Message" id="message" required></textarea>
+                </div>
+                <div class="sub-btn"><button type="submit" class="btn">Submit</button></div>
+                <span class="co-fo-sp co-fo-sp1"></span>
+                <span class="co-fo-sp co-fo-sp2"></span>
+                <span class="co-fo-sp co-fo-sp3"></span>
+                <span class="co-fo-sp co-fo-sp4"></span>
+            </form>
+            <div class="status"></div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script src="vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll('.card'), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
+    })
+</script>
+
+</html>
