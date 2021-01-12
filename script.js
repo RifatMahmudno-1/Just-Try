@@ -44,6 +44,23 @@
         };
         xhr.send(data);
     }
+    document.querySelector('#switch').addEventListener('click', function () {
+        var onoff = document.querySelector('#switch');
+        if (onoff.checked == true) {
+            document.body.style = 'background-color: white; color: black;';
+            for (var i = 0; i < document.querySelectorAll('.card').length; i++) {
+                document.querySelectorAll('.card')[i].style = 'background: #0099ff50; border: 2px solid rgba(0, 0, 0, 0.4);';
+            }
+            document.querySelector('.haed').style = 'background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145),  rgb(0, 132, 255));';
+        }
+        else if (onoff.checked == false) {
+            document.body.style = 'background-color: rgb(1, 0, 51); color:white;';
+            for (var i = 0; i < document.querySelectorAll('.card').length; i++) {
+                document.querySelectorAll('.card')[i].style = 'background: rgba(255, 255, 255, 0.3); border: 2px solid rgba(255, 255, 255, 0.4);)';
+            }
+            document.querySelector('.haed').style = 'background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145), rgb(1, 1, 73));';
+        }
+    })
 })();
 
 /*var y = window.innerHeight;

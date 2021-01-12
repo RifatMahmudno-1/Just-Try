@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Signika';
-    color: white;
 }
 body{
     background-color: rgb(1, 0, 51);
     font-size: 20px;
+    color: white;
 }
 h2{
     font-size: 160%;
@@ -22,12 +22,73 @@ h2:after{
     display: block;
     margin: 1.5% auto;
 }
-header{
-    position: fixed;
+.haed{
+    position: sticky;
     height: 60px;
-    width: 100vw;
+    top:0;
     z-index: 99;
     background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145), rgb(1, 1, 73));
+}
+.theme{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    right: 80px;
+    text-align: center;
+}
+.titlle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.titlle h1{
+    font-size: 160%;
+    margin-left: 1%;
+}
+.titlle img{
+    height: 80%;
+    margin-left: 1%;
+}
+.switch {
+  position: absolute;
+  top:10px;
+  right:5px;
+  width: 70px;
+  height: 34px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 45%;
+   top: 5%;
+   left:5%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  border-radius: 50%;;
+}
+input:checked + .slider {
+  background-color: #ccc;
+}
+input:checked + .slider:before {
+  transform: translateX(95%);
 }
 /*---------------------------------------------*/
 .abc{
@@ -42,12 +103,12 @@ header{
     fill: #0099ff;
 }
 /*---------------------------*/
-.design{
+.h-c-j{
     position: relative;
     height: 100vh;
     max-width: 100vw;
 }
-/*-------------------------------------Background-Design-----------------------------------*/
+/*-------------------------------------Background-h-c-j-----------------------------------*/
 .des-1-4{
     position: absolute;
     height: 200px;
@@ -98,17 +159,18 @@ header{
     border-radius: 10px;
     margin: 15px;
     backdrop-filter: blur(5px);
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px 15px;
+    transition: 0.4s;
 }
 .card:hover{
-    box-shadow: 0px 10px 30px;
+    box-shadow: 5px 10px 30px;
 }
 .card h3{
     position: absolute;
     bottom: 5%;
     font-size: 200%;
     right: 10%;
-    color: rgb(224, 224, 224);
+    opacity: 0.7;
 }
 .card h2{
     padding-top: 5%;
@@ -130,12 +192,12 @@ header{
 /*------------------------------------------------------------------------*/
 
 /*-----------------------------Contact-Form------------------------*/
-section .contact-form{
+.contact-form{
     position: relative;
     height: 100vh;
     max-width: 100vw;
 }
-/*-------------------------------------Background-Design-----------------------------------*/
+/*-------------------------------------Background-h-c-j-----------------------------------*/
 .contact-form .cir-1{
     width: 100%;
     height: 100%;
@@ -169,7 +231,7 @@ section .contact-form{
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 1.5%;
-    box-shadow: 5px 5px 15px rgb(72, 62, 114);
+    box-shadow: 5px 5px 15px rgb(35, 9, 83);
     transition: 0.4s;
 }
 .contact-form .co-fo-sp{
@@ -202,7 +264,7 @@ section .contact-form{
     animation: co-fo-sp4 4s linear infinite;
 }
 .contact-form  form:hover{
-    box-shadow: 15px 15px 45px rgb(72, 62, 114);
+    box-shadow: 15px 15px 45px rgb(35, 9, 83);
 }
  .contact-form .n-e-m{
     display: grid;
