@@ -52,6 +52,8 @@
                 document.querySelectorAll('.card')[i].style = 'background: #0099ff50; border: 2px solid rgba(0, 0, 0, 0.4);';
             }
             document.querySelector('.haed').style = 'background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145),  rgb(0, 132, 255));';
+            document.querySelector(".borp").style.background = '#fff';
+
         }
         else if (onoff.checked == false) {
             document.body.style = 'background-color: rgb(1, 0, 51); color:white;';
@@ -59,6 +61,7 @@
                 document.querySelectorAll('.card')[i].style = 'background: rgba(255, 255, 255, 0.3); border: 2px solid rgba(255, 255, 255, 0.4);)';
             }
             document.querySelector('.haed').style = 'background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145), rgb(1, 1, 73));';
+            document.querySelector(".borp").style.background = 'rgb(1, 0, 51)';
         }
     })
 })();

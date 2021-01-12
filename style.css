@@ -102,6 +102,78 @@ input:checked + .slider:before {
     bottom:0;
     fill: #0099ff;
 }
+.abc .content{
+    height: 80vh;
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.conimg{
+    width:  45vw; 
+}
+.conp{
+    width: 45vw;
+    border:  4px solid rgb(255, 0, 255);
+    border-top-right-radius: 60%; 
+    border-bottom-left-radius: 60%; 
+}
+.borp{
+    background: rgb(1, 0, 51);
+}
+.conp p{
+    font-size: 150%;
+    text-align: justify;
+    padding: 1% 2%;
+}
+.conimg img{
+    max-width: 80%;
+    float: right;
+}
+.abcmore{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.abcmore h2{
+    padding: 5px 30px;
+}
+.abcmore h2:after{
+    width: 100%;
+}
+.lemo{
+    position: absolute;
+    width:  100%;
+    display: flex;
+    justify-content: center;
+}
+.lemo a{
+    text-decoration: none;
+    color:  rgb(0,255, 255);
+}
+.lemo1{
+    background: linear-gradient(#f00,#f0f);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%, 70% 50%);
+    position: absolute;
+    z-index: 4;
+    transition: 2s;
+}
+.abcmore .lemo1:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 38%);
+    z-index: 10;
+}
+.lemo2{
+clip-path: polygon(0 0, 35% 0, 70% 50%, 35% 100%, 0 100%, 0% 50%);
+    background:linear-gradient(90deg, #0099ff, rgb(25, 4, 145));
+    position: absolute;
+    transition: 1s;
+    z-index: 4;
+}
+.lemo2:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 100% 100%, 0 100%, 0% 50%);
+}
 /*---------------------------*/
 .h-c-j{
     position: relative;
