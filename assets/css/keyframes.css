@@ -50,3 +50,39 @@
         transform: rotate(3600deg);
     }
 }
+@keyframes libani{
+    0%{
+    transform: rotate(0deg)
+    }
+    100%{
+    transform: rotate3d(10, 10, 20, 360deg)
+    }
+}
+@keyframes libaniy{
+    0%{
+    transform: rotate(0deg)
+    }
+    25%{
+    transform: rotate3d(0, 10, 0, 360deg)
+    }
+    50%{
+    transform: rotate(0deg)
+    }
+    75%{
+    transform: rotate3d(10, 0, 0, 360deg)        
+    }
+}
+@keyframes libanix{
+    0%{
+    transform: rotate(0deg)
+    }
+    75%{
+    transform: rotate3d(0, 10, 0, 360deg)
+    }
+    50%{
+    transform: rotate(0deg)
+    }
+    25%{
+    transform: rotate3d(10, 0, 0, 360deg)        
+    }
+}

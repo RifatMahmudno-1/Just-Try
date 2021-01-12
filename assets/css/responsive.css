@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1000px){
+    .contact-form .status{
+        transform: translateY(465%);
+    }
+    .des-1, .des-3{
+        left: 10%;
+    }
+    .des-2, .des-4{
+        right: 10%;
+    }
+    .h-c-j .card{
+            width: 300px;
+    height: 380px;
+    }
+    .conp p{
+        font-size: 130%;
+    }
+    .librec p{
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width: 700px){
+    body{
+        font-size: 18px;
+    }
+    .contact-form   form{
+    width: 500px;
+    height: 350px;
+    }
+        .contact-form .status{
+        transform: translateY(480%);
+    }
+    .h-c-j .card{
+        width: 235px;
+    height: 350px;
+    }
+    .h-c-j .card p{
+        font-size:100%;
+    }
+    .conp p{
+        font-size: 120%;
+    }
+}
+@media only screen and (max-width: 550px){
+    body{
+        font-size: 16px;
+    }
+    .contact-form   form{
+    width: 400px;
+    height: 300px;
+    }
+        .contact-form .status{
+        transform: translateY(500%);
+    }
+    .h-c-j .card{
+        width: 200px;
+    height: 320px;
+    }
+    .h-c-j .card p{
+        font-size:100%;
+    }
+    .h-c-j .des-1-4{
+        width: 180px;
+        height: 180px;
+    }
+        .conp p{
+        font-size: 110%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .h-c-j .card{
+     width: 160px;
+    height: 270px;
+    }
+     .h-c-j .card p{
+        font-size:80%;
+    }
+     .h-c-j .des-1-4{
+        width: 150px;
+        height: 150px;
+    }
+    .contact-form   form{
+    width: 380px;
+    height: 300px;
+    }
+    .titlle h1{
+        font-size: 130%;
+    }
+    .titlle img{
+        height:  60%;
+    }
+    .haed{
+        height: 40px;
+    }
+    .switch{
+    width: 50px;
+    height: 24px;
+      top:8px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        font-size: 12px;
+    }
+    .contact-form   form{
+    width: 300px;
+    height: 230px;
+    }
+    .contact-form .status{
+        transform: translateY(550%);
+    }
+    .h-c-j .des-1-4{
+        width: 125px;
+        height: 125px;
+    }
+        .h-c-j .card{
+     width: 80%;
+    height: 150px;
+    }
+    .h-c-j .card h3{
+        font-size: 110%;
+    }
+}
+@media only screen and (max-width: 300px){
+    body{
+        font-size: 10px;
+    }
+    .contact-form   form{
+    width: 250px;
+    height: 200px;
+    }
+     .h-c-j .des-1-4{
+        width: 80px;
+        height: 80px;
+    }
+        .conp{
+        width: 51vw;
+    }
+    .conimg{
+        width: 51vw;
+    }
+    .conimg img{
+        max-width: 100%;
+    }
+    .abc .content div:nth-child(2){
+    order: -1;
+    }
+}

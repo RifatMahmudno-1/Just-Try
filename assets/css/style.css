@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika';
+}
+body{
+    background-color: rgb(1, 0, 51);
+    font-size: 20px;
+    color: white;
+}
+/*
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff00d4;
+}
+*/
+h2{
+    font-size: 160%;
+    text-align: center;
+}
+h2:after{
+    content: "";
+    width: 80%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg,rgb(0, 4, 255),rgb(255, 0, 221));
+    border-image-slice: 2;
+    display: block;
+    margin: 1.5% auto;
+}
+/*-----------------------------------------Header----------------------------------*/
+.haed{
+    position: sticky;
+    height: 60px;
+    top:0;
+    z-index: 99;
+    background: linear-gradient(90deg, #0099ff, rgb(25, 4, 145), rgb(1, 1, 73));
+}
+.headchange{
+    display: grid;
+    height: 100%;
+    position: absolute;
+    grid-template-columns: 80px 120px 100px 100px;
+    align-items: center;
+    right: 0px;
+}
+.titlle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.titlle h1{
+    font-size: 160%;
+    margin-left: 1%;
+}
+.titlle img{
+    height: 80%;
+    margin-left: 1%;
+}
+.switch,
+.switch1 {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  top:  22%;
+}
+.switch input,
+.switch1 input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider,
+.slider1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before,
+.slider1:before {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 45%;
+   top: 5%;
+   left:5%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.switch input:checked + .slider,
+.switch1 input:checked + .slider1 {
+  background-color: #ccc;
+}
+.switch input:checked + .slider:before,
+.switch1 input:checked +.slider1:before {
+  transform: translateX(95%);
+}
+/*--------------------------------ABC----------------------------------------*/
+.abc{
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+}
+.abc .svg1{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    fill: #0099ff;
+}
+.abc .content{
+    height: 80vh;
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.conimg{
+    width:  45vw; 
+}
+.conp{
+    width: 45vw;
+    border:  4px solid rgb(255, 0, 255);
+    border-top-right-radius: 60%; 
+    border-bottom-left-radius: 60%; 
+}
+.borp{
+    background: rgb(1, 0, 51);
+}
+.conp p{
+    font-size: 150%;
+    text-align: justify;
+    padding: 1% 2%;
+}
+.conimg img{
+    max-width: 80%;
+    float: right;
+}
+.abcmore{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.abcmore h2{
+    padding: 5px 30px;
+}
+.abcmore h2:after{
+    width: 100%;
+}
+.lemo{
+    position: absolute;
+    width:  100%;
+    display: flex;
+    justify-content: center;
+}
+.lemo a{
+    text-decoration: none;
+    color:  rgb(0,255, 255);
+}
+.lemo1{
+    background: linear-gradient(#f00,#f0f);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%, 70% 50%);
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+}
+.abcmore .lemo1:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 38%);
+    z-index: 10;
+}
+.lemo2{
+clip-path: polygon(0 0, 35% 0, 70% 50%, 35% 100%, 0 100%, 0% 50%);
+    background:linear-gradient(90deg, #0099ff, rgb(25, 4, 145));
+    position: absolute;
+    transition: 0.5s;
+    z-index: 4;
+}
+.lemo2:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 100% 100%, 0 100%, 0% 50%);
+}
+/*--------------------------------------HCJ----------------------------------------*/
+.h-c-j{
+    position: relative;
+    height: 100vh;
+    max-width: 100vw;
+}
+.des-1-4{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transition: 0.4s;
+    animation: desani 15s linear infinite;
+}
+.des-1{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background:linear-gradient(135deg,#f00,#f0f);
+    top: 3%;
+    left: 5%;
+}
+.des-2{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background:linear-gradient(135deg, rgb(255, 0, 191), rgb(132, 0, 255));
+    top: 3%;
+    right: 5%;
+}
+.des-3{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background:linear-gradient(135deg,rgb(204, 0, 255),rgb(4, 0, 255));
+    bottom: 3%;
+    left: 5%;
+}
+.des-4{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    background:linear-gradient(135deg,rgb(76, 0, 255),rgb(24, 2, 83));
+    bottom: 3%;
+    right: 5%;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+}
+.card{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px;
+    transition: 0.4s;
+}
+.card:hover{
+    box-shadow: 5px 10px 30px;
+}
+.card h3{
+    position: absolute;
+    bottom: 5%;
+    font-size: 200%;
+    right: 10%;
+    opacity: 0.7;
+}
+.card h2{
+    padding-top: 5%;
+}
+.card p{
+    font-size: 110%;
+    padding: 4%;
+	text-align: justify;
+}
+.card .card-img{
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+}
+.card img{
+    height: 100%;
+}
+/*-------------------------------Libraries------------------------------*/
+.libraries{
+    min-height: 90vh;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+    background: rgb(2, 0, 46);
+}
+.libdesign{
+    position: absolute;
+    bottom: 5vh;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libdesign div:nth-child(1){
+    width:  100px;
+    height:  100px;
+    background:  linear-gradient(rgb(255, 0, 242), rgb(255, 0, 179), rgb(255, 0, 34));
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: libani 1s infinite linear;
+}
+.libdesign div:nth-child(2){
+    width:  100px;
+    height:  100px;
+    background:  linear-gradient(rgb(255, 0, 0), rgb(229, 255, 0), rgb(0, 255, 76));
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: libani 1s infinite linear;
+}
+.libdesign div:nth-child(3){
+    width:  100px;
+    height:  100px;
+    background:  linear-gradient(rgb(255, 0, 242), rgb(255, 0, 179), rgb(255, 0, 34));
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: libani 1s infinite linear;
+}
+.libdesign div:nth-child(4){
+    width:  100px;
+    height:  100px;
+    background:  linear-gradient(rgb(255, 0, 0), rgb(229, 255, 0), rgb(0, 255, 76));
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: libani 1s infinite linear;
+}
+.libdesign div:nth-child(5){
+    width:  300px;
+    height:  300px;
+    background:  linear-gradient(45deg,rgb(255, 0, 191), rgb(0, 38, 255));
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: libaniy 2s infinite linear;
+}
+.libdesign div:nth-child(6){
+    width:  200px;
+    height:  200px;
+    left: 0;
+    background:  linear-gradient(45deg,rgb(10, 0, 104), rgb(0, 162, 255));
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: libanix 2s infinite linear;
+}
+.libdesign div:nth-child(7){
+    width:  200px;
+    height:  200px;
+    right: 0;
+    background:  linear-gradient(45deg, rgb(0, 162, 255),rgb(10, 0, 104));
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: libanix 2s infinite linear;
+}
+.libdesign div:nth-child(8){
+    width:  200px;
+    height:  200px;
+    top: 0;
+    background:  linear-gradient(180deg,rgb(255, 0, 191), rgb(0, 255, 255));
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: libanix 2s infinite linear;
+}
+.libdesign div:nth-child(9){
+    width:  200px;
+    height:  200px;
+    bottom: 0;
+    background:  linear-gradient(180deg, rgb(0, 255, 255),rgb(255, 0, 191));
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: libanix 2s infinite linear;
+}
+.libcontent{
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 40% 40%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.librec{
+    background: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: justify;
+    overflow: hidden;
+    position: relative;
+        backdrop-filter: blur(5px);
+}
+.librec p{
+    padding: 1% 2%;
+}
+.librac-a{
+    position:absolute;
+    bottom:16%;
+    width: 100%;
+}
+.librac-a a{
+    background: rgb(0, 170, 170);
+    float: right;
+    text-decoration: none;
+    margin: 1% 2%;
+    padding: 2% 4%;
+    border-radius: 8px;
+    transition: 0.4s;
+    color: white;
+}
+.librac-a a:hover{
+    box-shadow: 0 5px 10px;
+}
+.imgdow{
+    position: absolute;
+    height: 15%;
+    background-color: red;
+    bottom: 0;
+    width: 100%;
+}
+.imgdow img{
+    height: 100%;
+    padding-left: 1%;
+}
+.imgdow a{
+    position: absolute;
+    font-size: 120%;
+    padding: 1% 2%;
+    right: 0;
+    bottom:15%;
+    color: aqua;
+    text-decoration-color: aqua;
+}
+
+/*-----------------------------Contact-Form------------------------*/
+.contact-form{
+    position: relative;
+    height: 100vh;
+    max-width: 100vw;
+}
+.contact-form .cir-1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 80%);
+}
+.contact-form .cir-2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgb(98, 0, 255),rgb(0, 38, 255));
+    clip-path: circle(30% at left 20%);
+}
+.contact-form  .form{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form   form{
+    width: 600px;
+    height: 400px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(270deg,rgb(0, 4, 255),rgb(255, 0, 221));
+    border-image-slice: 2;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 1.5%;
+    box-shadow: 5px 5px 15px rgb(35, 9, 83);
+    transition: 0.4s;
+}
+.contact-form .co-fo-sp{
+    border: 1px solid aqua;
+    display: block;
+    position: absolute;
+}
+.contact-form .co-fo-sp1{
+    width: 20%;
+    bottom: -4px;
+    left: 0;
+    animation: co-fo-sp1 4s linear infinite;
+}
+.contact-form .co-fo-sp2{
+    width: 20%;
+    top: -4px;
+    right: 0;
+    animation: co-fo-sp2 4s linear infinite;
+}
+.contact-form .co-fo-sp3{
+    height: 20%;
+    top: 0;
+    left: -4px;
+    animation: co-fo-sp3 4s linear infinite;
+}
+.contact-form .co-fo-sp4{
+    height: 20%;
+    bottom: 0;
+    right: -4px;
+    animation: co-fo-sp4 4s linear infinite;
+}
+.contact-form  form:hover{
+    box-shadow: 15px 15px 45px rgb(35, 9, 83);
+}
+ .contact-form .n-e-m{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-size: 140%;
+    margin-bottom: 3%;
+}
+.contact-form .sub-btn{
+    display: flex;
+    justify-content: center;
+}
+.contact-form .btn{
+    color: #fff;
+    background: linear-gradient(rgb(162, 0, 255),rgb(0, 38, 255));
+    font-size: 100%;
+    padding: 2% 4%;
+    border-radius: 10px;
+    border: 2px solid aquamarine;
+    transition: 0.4s;
+}
+.contact-form .btn:hover{
+    background: linear-gradient(180deg,rgb(0, 38, 255),rgb(162, 0, 255));
+}
+.contact-form #name,.contact-form #email,.contact-form #message{
+    color: black;
+    font-size: 105%;
+    border-radius: 4px;
+    resize: none;
+}
+.contact-form .status{
+    font-size: 150%;
+    position: absolute;
+    transform: translateY(450%);
+    background: linear-gradient(90deg,rgb(0, 17, 255), rgb(255, 0, 221));
+    padding: 1% 2%;
+    display: none;
+    border-radius: 10px;
+}
+/*----------------------------------------------------------*/
+footer{
+    height: 100px;
+    max-width: 100vw;
+    position: relative;
+}
+.social-icon{
+    position: absolute;
+    right:0;
+    top: 10px;
+}
+.social-icon span{
+    font-size: 180%;
+    padding-right: 20px;
+    float: right;
+}
+.social-icon span:after{
+    content: "";
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg,rgb(255, 255, 255),rgb(255, 255, 255));
+    border-image-slice: 2;
+    display: block;
+    margin: 1.5% auto;
+    width: 100%;
+}
+.social-icon span:nth-child(1):hover{
+    background: linear-gradient(135deg,rgb(0, 68, 255),rgb(0, 195, 255));
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icon span:nth-child(2):hover{
+    background: linear-gradient(135deg,rgb(47, 0, 255),rgb(255, 0, 221));
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icon span:nth-child(1):hover:after{
+    content: "";
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg,rgb(0, 102, 255),rgb(0, 195, 255));
+    border-image-slice: 2;
+    display: block;
+    margin: 1.5% auto;
+    width: 100%;
+}
+.social-icon span:nth-child(2):hover:after{
+    content: "";
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg,rgb(0, 4, 255),rgb(255, 0, 221));
+    border-image-slice: 2;
+    display: block;
+    margin: 1.5% auto;
+    width: 100%;
+}
+.social-icon span:nth-child(3):hover{
+    color: rgb(0, 255, 255);
+}
+.social-icon span:nth-child(3):hover:after{
+    content: "";
+    border: 2px solid transparent;
+    background: rgb(0, 255, 255);
+    display: block;
+    margin: 1.5% auto;
+    width: 100%;
+}
+.social-icon span:nth-child(4):hover{
+    color: rgb(115, 138, 219);
+}
+.social-icon span:nth-child(4):hover:after{
+    content: "";
+    border: 2px solid transparent;
+    background: rgb(115, 138, 219);
+    display: block;
+    margin: 1.5% auto;
+    width: 100%;
+}
