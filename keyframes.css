@@ -1,0 +1,52 @@
+@keyframes co-fo-sp1{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes co-fo-sp2{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes co-fo-sp3{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes co-fo-sp4{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-400%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes desani{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(3600deg);
+    }
+}
