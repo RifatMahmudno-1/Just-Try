@@ -33,8 +33,8 @@
 
             function success() {
                 form.reset();
-                status.textContent = "Thanks for submitting";
-                status.style = "color:green;"
+                status.textContent = "Thanks for subscribing";
+                status.style = "color:aqua;"
             }
 
             function error() {
@@ -105,8 +105,11 @@
             el1.disabled = true;
         }
     })
+    var image = document.getElementsByTagName('img');
+    for (var i = 0; i < image.length; i++) {
+        image[i].setAttribute('draggable', false);
+    }
 })();
-
 /*var y = window.innerHeight;
 var x = window.innerWidth;
 
