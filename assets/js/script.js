@@ -1,31 +1,56 @@
 (function () {
     window.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.btn1').addEventListener('click', function () {
+            // get the form elements defined in your form HTML above
+            var form = document.getElementById("my-form");
+            var status = document.querySelector(".status");
+            // Success and Error functions for after the form is submitted
 
-        // get the form elements defined in your form HTML above
+            function success() {
+                form.reset();
+                status.style.display = 'block';
+                status.textContent = "Thanks for submitting";
+            }
 
-        var form = document.getElementById("my-form");
-        var status = document.querySelector(".status");
+            function error() {
+                status.style.display = 'block';
+                status.textContent = "Oops! There was a problem.";
+            }
 
-        // Success and Error functions for after the form is submitted
+            // handle the form submission event
 
-        function success() {
-            form.reset();
-            status.style.display = 'block';
-            status.textContent = "Thanks for submitting";
-        }
-
-        function error() {
-            status.style.display = 'block';
-            status.textContent = "Oops! There was a problem.";
-        }
-
-        // handle the form submission event
-
-        form.addEventListener("submit", function (ev) {
-            ev.preventDefault();
-            var data = new FormData(form);
-            ajax(form.method, form.action, data, success, error);
+            form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
         });
+        document.querySelector('.btn2').addEventListener('click', function () {
+            // get the form elements defined in your form HTML above
+            var form = document.getElementById("soci-emi");
+            var status = document.querySelector(".emi-w-r");
+            // Success and Error functions for after the form is submitted
+
+            function success() {
+                form.reset();
+                status.textContent = "Thanks for submitting";
+                status.style = "color:green;"
+            }
+
+            function error() {
+                status.textContent = "Oops! There was a problem.";
+                status.style = 'color:red;'
+            }
+
+            // handle the form submission event
+
+            form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
+        })
+
     });
 
     // helper function for sending an AJAX request

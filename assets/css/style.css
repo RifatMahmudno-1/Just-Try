@@ -424,7 +424,7 @@ clip-path: polygon(0 0, 35% 0, 70% 50%, 35% 100%, 0 100%, 0% 50%);
 .imgdow{
     position: absolute;
     height: 15%;
-    background-color: red;
+    background: linear-gradient(90deg,rgb(255, 0, 221), rgb(55, 0, 255));
     bottom: 0;
     width: 100%;
 }
@@ -557,73 +557,130 @@ footer{
     height: 100px;
     max-width: 100vw;
     position: relative;
+    background-color: blueviolet;
+    color:#fff;
 }
 .social-icon{
     position: absolute;
     right:0;
-    top: 10px;
+    bottom: 10%;
+    width: 200px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    z-index: 20;;
 }
 .social-icon span{
     font-size: 180%;
-    padding-right: 20px;
-    float: right;
+    margin-right: 20px;
+    display: block;
+    transition: 0.4s;
+}
+.social-icon span a{
+    text-decoration: none;
+    color: #fff;
 }
 .social-icon span:after{
-    content: "";
-    border: 2px solid transparent;
-    border-image: linear-gradient(135deg,rgb(255, 255, 255),rgb(255, 255, 255));
-    border-image-slice: 2;
-    display: block;
-    margin: 1.5% auto;
     width: 100%;
+    border: 2px solid #fff;
+    display: block;
+    content: '';
+    border-image-slice: 2;
+    transition: 0.4s;
 }
-.social-icon span:nth-child(1):hover{
-    background: linear-gradient(135deg,rgb(0, 68, 255),rgb(0, 195, 255));
-      -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.social-icon span:nth-child(2):hover{
-    background: linear-gradient(135deg,rgb(47, 0, 255),rgb(255, 0, 221));
-      -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.social-icon span:nth-child(1):hover a{
+background: linear-gradient(-135deg,rgb(0, 26, 255), rgb(0, 204, 255));
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
 .social-icon span:nth-child(1):hover:after{
-    content: "";
-    border: 2px solid transparent;
-    border-image: linear-gradient(135deg,rgb(0, 102, 255),rgb(0, 195, 255));
-    border-image-slice: 2;
-    display: block;
-    margin: 1.5% auto;
     width: 100%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(-135deg,rgb(0, 26, 255), rgb(0, 204, 255));
+    display: block;
+    content: '';
+    border-image-slice: 2;
+}
+.social-icon span:nth-child(2):hover a{
+background: linear-gradient(-135deg,rgb(68, 0, 255), rgb(255, 38, 255));
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
 .social-icon span:nth-child(2):hover:after{
-    content: "";
+    width: 100%;
     border: 2px solid transparent;
-    border-image: linear-gradient(135deg,rgb(0, 4, 255),rgb(255, 0, 221));
+    border-image: linear-gradient(-135deg,rgb(68, 0, 255), rgb(255, 38, 255));
+    display: block;
+    content: '';
     border-image-slice: 2;
-    display: block;
-    margin: 1.5% auto;
-    width: 100%;
 }
-.social-icon span:nth-child(3):hover{
-    color: rgb(0, 255, 255);
-}
-.social-icon span:nth-child(3):hover:after{
-    content: "";
-    border: 2px solid transparent;
-    background: rgb(0, 255, 255);
-    display: block;
-    margin: 1.5% auto;
-    width: 100%;
-}
-.social-icon span:nth-child(4):hover{
+.social-icon span:nth-child(4):hover a{
     color: rgb(115, 138, 219);
 }
 .social-icon span:nth-child(4):hover:after{
-    content: "";
-    border: 2px solid transparent;
-    background: rgb(115, 138, 219);
-    display: block;
-    margin: 1.5% auto;
     width: 100%;
+    border: 2px solid rgb(115, 138, 219);
+    display: block;
+    content: '';
+}
+.social-icon span:nth-child(3):hover a{
+    color: aqua;
+}
+.social-icon span:nth-child(3):hover:after{
+    width: 100%;
+    border: 2px solid aqua;
+    display: block;
+    content: '';
+}
+.s-c-m{
+    position: absolute;
+    right:10px;
+    top: 10%;
+}
+.soci-form{
+    position: absolute;
+    top: 5px;
+    left:10px;
+    width: 200px;
+    z-index: 10;;
+}
+.soci-form input{
+    width: 50%;
+}
+.soci-form label{
+    width: 30%;
+}
+.cori{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 30;
+}
+.cori a{
+    color: #fff;
+    text-decoration-color: #fff;
+}
+.foot-other{
+    position: absolute;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    z-index: 5;;
+}
+.foot-other span{
+    border: 2px solid aqua;
+    margin: 0 1%;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.foot-other span:hover{
+    box-shadow: 0 5px 10px;
+}
+.foot-other a{
+    color: #fff;
+    text-decoration: none;
 }
