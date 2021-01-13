@@ -9,7 +9,6 @@ body{
     font-size: 20px;
     color: white;
 }
-/*
 html {
     -ms-overflow-style: none;
     scrollbar-width: none; 
@@ -20,7 +19,6 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #ff00d4;
 }
-*/
 h2{
     font-size: 160%;
     text-align: center;
