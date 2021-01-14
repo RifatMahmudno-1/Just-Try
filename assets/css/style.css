@@ -15,7 +15,11 @@ body {
 html {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -137,6 +141,52 @@ h2:after {
 .switch1 input:checked+.slider1:before {
     -webkit-transform: translateX(95%);
     transform: translateX(95%);
+}
+
+/*-------------------------------mane---------------------------------*/
+.menu {
+    position: fixed;
+    bottom: 20vh;
+    right: 1vw;
+    z-index: 999;
+
+}
+
+.mn-op p {
+    background: linear-gradient(90deg, rgb(255, 0, 242), rgb(3, 0, 153));
+    font-size: 140%;
+    text-align: center;
+    margin: 5% 0;
+    padding: 2% 3%;
+    border-radius: 20px;
+}
+
+.mn-op p a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.mn-op p a:hover {
+    text-decoration: underline;
+}
+
+.mn-cl {
+    position: absolute;
+    right: 0;
+}
+
+.mn-cl i {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 160%;
+    background: red;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: #fff;
 }
 
 /*--------------------------------ABC----------------------------------------*/
@@ -531,38 +581,52 @@ h2:after {
     -ms-grid-rows: 40% 40%;
     grid-template-rows: 40% 40%;
     -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -ms-flex-line-pack: distribute;
     align-content: space-around;
 }
 
 .libcontent>*:nth-child(1) {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 1;
+    grid-column: 1;
 }
 
 .libcontent>*:nth-child(2) {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 2;
+    grid-column: 2;
 }
 
 .libcontent>*:nth-child(3) {
     -ms-grid-row: 1;
+    grid-row: 1;
     -ms-grid-column: 3;
+    grid-column: 3;
 }
 
 .libcontent>*:nth-child(4) {
     -ms-grid-row: 2;
+    grid-row: 2;
     -ms-grid-column: 1;
+    grid-column: 1;
 }
 
 .libcontent>*:nth-child(5) {
     -ms-grid-row: 2;
+    grid-row: 2;
     -ms-grid-column: 2;
+    grid-column: 2;
 }
 
 .libcontent>*:nth-child(6) {
     -ms-grid-row: 2;
+    grid-row: 2;
     -ms-grid-column: 3;
+    grid-column: 3;
 }
 
 .librec {

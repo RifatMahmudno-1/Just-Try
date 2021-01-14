@@ -182,24 +182,38 @@
         }
 }
 
-/*@-webkit-keyframes libaniy{
-    0%{
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg)
-    }
-    25%{
-    -webkit-transform: rotate3d(0, 10, 0, 360deg);
-            transform: rotate3d(0, 10, 0, 360deg)
-    }
-    50%{
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg)
-    }
-    75%{
-    -webkit-transform: rotate3d(10, 0, 0, 360deg);
-            transform: rotate3d(10, 0, 0, 360deg)        
-    }
-}*/
+@-webkit-keyframes libaniy {
+        0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+        }
+
+        20% {
+                -webkit-transform: rotate3d(0, 10, 0, 360deg);
+                transform: rotate3d(0, 10, 0, 360deg)
+        }
+
+        40% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+        }
+
+        60% {
+                -webkit-transform: rotate3d(0, 0, 10, 360deg);
+                transform: rotate3d(0, 0, 10, 360deg)
+        }
+
+        80% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+        }
+
+        100% {
+                -webkit-transform: rotate3d(10, 0, 0, 360deg);
+                transform: rotate3d(10, 0, 0, 360deg)
+        }
+}
+
 @keyframes libaniy {
         0% {
                 -webkit-transform: rotate(0deg);

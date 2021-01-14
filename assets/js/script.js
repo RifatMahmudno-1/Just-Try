@@ -82,8 +82,7 @@
             for (var i = 0; i < document.querySelectorAll('.librec').length; i++) {
                 document.querySelectorAll('.librec')[i].style = 'background: rgba(45, 45, 45, 0.15); border: 2px solid rgba(45, 45, 45, 0.35);';
             }
-        }
-        else if (onoff.checked == false) {
+        } else if (onoff.checked == false) {
             document.body.style = 'background-color: rgb(1, 0, 51); color:white;';
             for (var i = 0; i < document.querySelectorAll('.card').length; i++) {
                 document.querySelectorAll('.card')[i].style = 'background: rgba(255, 255, 255, 0.3); border: 2px solid rgba(255, 255, 255, 0.4);)';
@@ -109,7 +108,22 @@
     for (var i = 0; i < image.length; i++) {
         image[i].setAttribute('draggable', false);
     }
+    var hidsee = document.querySelector('.mn-op')
+    hidsee.style.display = 'none';
+    document.querySelector('.mn-cl').style = "transform: rotate(360deg); transition:0.4s"
+    document.querySelector('.mn-cl').addEventListener('click', function () {
+        if (hidsee.style.display !== 'none') {
+            hidsee.style.display = 'none';
+            document.querySelector('.mn-cl').innerHTML = "<i class='fad fa-bars '></i>"
+            document.querySelector('.mn-cl').style = "transform: rotate(360deg); transition:0.4s"
+        } else if (hidsee.style.display == 'none') {
+            hidsee.style.display = 'block';
+            document.querySelector('.mn-cl').innerHTML = "<i class='fad fa-times '></i>"
+            document.querySelector('.mn-cl').style = "transform: rotate(0deg); transition:0.4s"
+        }
+    })
 })();
+
 /*var y = window.innerHeight;
 var x = window.innerWidth;
 
