@@ -185,7 +185,6 @@ h2:after {
     font-size: 160%;
     background: red;
     border-radius: 20px;
-    transition: 0.5s;
     color: #fff;
 }
 

@@ -109,17 +109,20 @@
         image[i].setAttribute('draggable', false);
     }
     var hidsee = document.querySelector('.mn-op')
+    var selcli = document.querySelector('.mn-cl')
     hidsee.style.display = 'none';
-    document.querySelector('.mn-cl').style = "transform: rotate(360deg); transition:0.4s"
-    document.querySelector('.mn-cl').addEventListener('click', function () {
+    selcli.style = "transform: rotate(360deg); transition:0.4s"
+    selcli.addEventListener('click', function () {
         if (hidsee.style.display !== 'none') {
             hidsee.style.display = 'none';
-            document.querySelector('.mn-cl').innerHTML = "<i class='fad fa-bars '></i>"
-            document.querySelector('.mn-cl').style = "transform: rotate(360deg); transition:0.4s"
+            selcli.innerHTML = "<i class='fad fa-bars '></i>"
+            selcli.style = "transform: rotate(360deg); transition:0.4s";
+
         } else if (hidsee.style.display == 'none') {
             hidsee.style.display = 'block';
-            document.querySelector('.mn-cl').innerHTML = "<i class='fad fa-times '></i>"
-            document.querySelector('.mn-cl').style = "transform: rotate(0deg); transition:0.4s"
+            selcli.innerHTML = "<i class='fad fa-times '></i>"
+            selcli.style = "transform: rotate(0deg); transition:0.4s"
+            document.querySelector('.mn-cl i').style = "background:orange;"
         }
     })
 })();
