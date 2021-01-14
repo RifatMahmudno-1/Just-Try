@@ -516,7 +516,7 @@ h2:after {
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-animation: libaniy 2s infinite linear;
-    animation: libaniy 2s infinite linear;
+    animation: libaniy 4s infinite linear;
 }
 
 .libdesign div:nth-child(6) {
@@ -528,7 +528,7 @@ h2:after {
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-animation: libanix 2s infinite linear;
-    animation: libanix 2s infinite linear;
+    animation: libanix 4s infinite linear;
 }
 
 .libdesign div:nth-child(7) {
@@ -540,7 +540,7 @@ h2:after {
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-animation: libanix 2s infinite linear;
-    animation: libanix 2s infinite linear;
+    animation: libanix 4s infinite linear;
 }
 
 .libdesign div:nth-child(8) {
@@ -553,7 +553,7 @@ h2:after {
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-animation: libanix 2s infinite linear;
-    animation: libanix 2s infinite linear;
+    animation: libanix 4s infinite linear;
 }
 
 .libdesign div:nth-child(9) {
@@ -566,7 +566,7 @@ h2:after {
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     -webkit-animation: libanix 2s infinite linear;
-    animation: libanix 2s infinite linear;
+    animation: libanix 4s infinite linear;
 }
 
 .libcontent {
