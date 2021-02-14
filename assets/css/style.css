@@ -759,6 +759,7 @@ h2:after {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
+    position: absolute;
 }
 
 .co-fo-sp1 {
